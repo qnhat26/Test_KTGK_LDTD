@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1425"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- TIÊU ĐỀ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHI TIẾT SÁCH"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#35DDA6"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin sách trong thư viện cá nhân"
+            android:textColor="#A3B4C8"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- THẺ THÔNG TIN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:elevation="8dp"
+            android:layout_marginBottom="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TÊN SÁCH"
+                android:textColor="#93AEC4"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTenSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lập trình Android Kotlin"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#30465D"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GIÁ SÁCH"
+                android:textColor="#93AEC4"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvGiaSach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="125000"
+                android:textColor="#35DDA6"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#30465D"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GHI CHÚ"
+                android:textColor="#93AEC4"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvGhiChu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sách tham khảo Kotlin cơ bản"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#30465D"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TRẠNG THÁI"
+                android:textColor="#93AEC4"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTrangThai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chưa đọc"
+                android:textColor="#35DDA6"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- NÚT CHỈNH SỬA -->
+        <Button
+            android:id="@+id/btnChinhSua"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="CHỈNH SỬA"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#168C6A"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- NÚT QUAY LẠI -->
+        <Button
+            android:id="@+id/btnQuayLai"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="QUAY LẠI"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#29465E"/>
+
+    </LinearLayout>
+
+</ScrollView>
