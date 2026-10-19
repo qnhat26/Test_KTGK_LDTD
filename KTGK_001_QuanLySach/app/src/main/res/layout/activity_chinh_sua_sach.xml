@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1425"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHỈNH SỬA SÁCH"
+            android:textColor="#35DDA6"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cập nhật thông tin sách của bạn"
+            android:textColor="#A3B4C8"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sách"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/edtTenSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên sách"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9DACBF"
+            android:backgroundTint="#35DDA6"
+            android:layout_marginBottom="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá sách"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/edtGiaSach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập giá sách"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9DACBF"
+            android:backgroundTint="#35DDA6"
+            android:layout_marginBottom="22dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ghi chú"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"/>
+
+        <EditText
+            android:id="@+id/edtGhiChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập ghi chú"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9DACBF"
+            android:backgroundTint="#35DDA6"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnLuu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="LƯU THAY ĐỔI"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#168C6A"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="HỦY"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#29465E"/>
+
+    </LinearLayout>
+</ScrollView>
