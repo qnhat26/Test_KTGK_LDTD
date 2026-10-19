@@ -1,78 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#0B1425"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:padding="20dp">
+        android:padding="24dp">
+
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="QUẢN LÝ SÁCH"
-            android:layout_gravity="center_horizontal"
-            android:textSize="30sp"
-            android:layout_marginTop="50dp"
+            android:textColor="#35DDA6"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tên sách:"
-            android:textSize="20sp"/>
+            android:text="Tên sách"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"/>
 
         <EditText
             android:id="@+id/edtTenSach"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
             android:hint="Nhập tên sách"
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9DACBF"
+            android:backgroundTint="#35DDA6"
             android:layout_marginBottom="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Giá sách:"
-            android:textSize="20sp"/>
+            android:text="Giá sách"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"/>
 
         <EditText
             android:id="@+id/edtGiaSach"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"            android:hint="Nhập giá sách"
+            android:hint="Nhập giá sách"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9DACBF"
+            android:backgroundTint="#35DDA6"
             android:layout_marginBottom="20dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ghi chú:"
-            android:textSize="20sp"/>
+            android:text="Ghi chú"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"/>
 
         <EditText
             android:id="@+id/edtGhiChu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
             android:hint="Nhập ghi chú"
-            android:layout_marginBottom="20dp"/>
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:gravity="top"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9DACBF"
+            android:backgroundTint="#35DDA6"
+            android:layout_marginBottom="26dp"/>
 
         <Button
             android:id="@+id/btnThemSach"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="THÊM SÁCH" />
+            android:text="THÊM SÁCH"
+            android:layout_marginBottom="12dp"/>
 
         <Button
             android:id="@+id/btnXemChiTiet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="XEM CHI TIẾT" />
+            android:text="XEM CHI TIẾT"/>
+
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
