@@ -34,6 +34,10 @@ class MainActivity : AppCompatActivity() {
                 binding.edtGiaSach.error = "Giá sách phải lớn hơn 0"
                 return@setOnClickListener
             }
+            if (ghiChu_332.isEmpty()){
+                binding.edtGhiChu.error = "Vui lòng nhập ghi chú"
+                return@setOnClickListener
+            }
             Toast.makeText(
                 this,
                 "Thêm sách thành công: $tenSach_332",
